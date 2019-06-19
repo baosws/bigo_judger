@@ -22,7 +22,7 @@ make install
 ## Sử dụng
 
 ### Đầu tiên di chuyển vào thư mục chứa sol các thứ (không cần cũng được, nhưng lát hồi sẽ phải nhập địa chỉ solution với test dài hơn).
-Ví dụ cần chấm bài Chores buổi Sorting Blue ở *Dropbox/TA Big-O Orange/BigO_Orange_Lecture11_DP_LCS (Part II)/4. Advanced Fruits - SPOJ (BTVN Bai 1)*
+Ví dụ cần chấm bài Advanced Fruits buổi 11  của Orange ở *Dropbox/TA Big-O Orange/BigO_Orange_Lecture11_DP_LCS (Part II)/4. Advanced Fruits - SPOJ (BTVN Bai 1)*
 - Ubuntu:
 ```
 cd ~/"Dropbox/TA Big-O Orange/BigO_Orange_Lecture11_DP_LCS (Part II)/4. Advanced Fruits - SPOJ (BTVN Bai 1)"
@@ -39,45 +39,51 @@ Trong folder này có 4 solution là  *Solution_AC.cpp, Solution_AC.java, Soluti
 ```
 judge Solution_AC.cpp -T data
 ```
-![](img/img1)
+![](img/img1.png)
+
+**Note**: Nếu thư mục test data đặt là *TestData* rồi thì không cần *-T TestData* nữa vì đó là tên test mặc định.
+
+<img src="https://thumbs.gfycat.com/FakeCreamyFrigatebird-small.gif" width="200" height="200"/>
 
 - Chấm cả 4 sol trên:
 ```
 judge Solution* -T data
 ```
-![](img/img2)
+![](img/img2.png)
 
-- Hiện lỗi compilation error:
+- Hiện lỗi compilation error: **-c**
 ```
 judge Solution* -T data -c
 ```
-![](img/img3)
+![](img/img3.png)
 
-- Hiện lỗi runtime error:
+- Hiện lỗi runtime error: **-r**
 ```
 judge Solution* -T data -r
 ```
-![](img/img4)
+![](img/img4.png)
 
-- Hiện chỗ sai của output so với answer/checker:
+- Hiện chỗ sai của output so với answer/checker: **-d**
 ```
 judge Solution* -T data -d
 ```
-![](img/img5)
+![](img/img5.png)
 
-- Chấm thêm time limit 0.01s:
+- Chấm thêm time limit 0.01s: **-t <time tính bằng s>**
 ```
 judge Solution.* -T data -t 0.01
 ```
-![](img/img6)
+![](img/img6.png "Nhìn hơi vô lý nhưng lại rất thuyết phục")
 
-- Chấm với checker:
+- Chấm với checker: **-C <tên checker>**
 ```
 judge Solution.* -T data -C checker.cpp
 ```
-![](img/img7)
+![](img/img7.png)
 
+**Note**: checker không nhất thiết phải là C++ nhưng phải theo chuẩn template của anh Phút (coi trong *Cẩm nang trợ giảng*).
 ### Các option nhảm nhí khác:
+
 Có thể coi help bằng:
 
 ```
