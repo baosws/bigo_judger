@@ -51,6 +51,10 @@ judge Solution_AC.cpp -T data
 
 - Chấm cả 4 sol trên:
 ```
+judge Solution_AC.cpp Solution_AC.java Solution_AC.py Solution_RE.cpp -T data
+```
+hoặc
+```
 judge Solution* -T data
 ```
 ![](img/img2.png)
