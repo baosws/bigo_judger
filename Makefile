@@ -1,5 +1,5 @@
 CXXFLAGS=-std=c++17 -O2 -Iinc/
-LINK=-lstdc++fs -lbprinter -pthread -llogger
+LINK=-lstdc++fs -Llib -lbprinter -pthread
 OBJDIR=obj
 INCDIR=inc
 SRCDIR=src
