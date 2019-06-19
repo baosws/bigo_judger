@@ -1,4 +1,4 @@
-CXXFLAGS=-O2 -Iinc/
+CXXFLAGS=-std=c++17 -O2 -Iinc/
 LINK=-lstdc++fs -lbprinter -pthread -llogger
 OBJDIR=obj
 INCDIR=inc
