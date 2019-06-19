@@ -26,7 +26,7 @@ make install
 ## 3. Sử dụng
 
 ### 1. Đầu tiên di chuyển vào thư mục chứa sol các thứ (không cần cũng được, nhưng lát hồi sẽ phải nhập địa chỉ solution với test dài hơn).
-Ví dụ cần chấm bài Advanced Fruits buổi 11  của Orange ở *Dropbox/TA Big-O Orange/BigO_Orange_Lecture11_DP_LCS (Part II)/4. Advanced Fruits - SPOJ (BTVN Bai 1)*
+**Ví dụ** cần chấm bài Advanced Fruits buổi 11  của Orange ở *Dropbox/TA Big-O Orange/BigO_Orange_Lecture11_DP_LCS (Part II)/4. Advanced Fruits - SPOJ (BTVN Bai 1)*
 - Ubuntu:
 ```
 cd ~/"Dropbox/TA Big-O Orange/BigO_Orange_Lecture11_DP_LCS (Part II)/4. Advanced Fruits - SPOJ (BTVN Bai 1)"
@@ -36,8 +36,8 @@ cd ~/"Dropbox/TA Big-O Orange/BigO_Orange_Lecture11_DP_LCS (Part II)/4. Advanced
 cd "/mnt/c/Users/Bao/Dropbox/TA Big-O Orange/BigO_Orange_Lecture11_DP_LCS (Part II)/4. Advanced Fruits - SPOJ (BTVN Bai 1)"
 ```
 
-### 2. Chấm thôi. Bước này tùy điều kiện mà làm khác nhau.
-Trong folder này có 4 solution là  *Solution_AC.cpp, Solution_AC.java, Solution_AC.py, Solution_RE.cpp*. Thư mục test tên là *data* (mặc định các cặp input, answer có đuôi là *in* và *ans*). Checker tên là *checker.cpp*:
+### 2. Chấm thôi! Bước này tùy điều kiện mà làm khác nhau.
+Trong folder này có 4 solution là  *Solution_AC.cpp, Solution_AC.java, Solution_AC.py, Solution_RE.cpp*. Thư mục test tên là *data* (mặc định các cặp input, answer có đuôi là *.in* và *.ans*). Checker tên là *checker.cpp*:
 
 - Chấm *Solution_AC.cpp*:
 ```
@@ -97,7 +97,7 @@ judge -h
 
 | Option | Ý nghĩa |
 |--------|---------|
-|-I input\_extention| Nếu input không có đuôi mặc định là *in* thì thêm cái này. Ví dụ '-I inp' |
-|-A answer\_extension| Nếu answer không có đuôi mặc định là *ans* thì thêm cái này. Ví dụ '-A out' |
+|-I input\_extention| Nếu input không có đuôi mặc định là *.in* thì thêm cái này. Ví dụ '-I inp' |
+|-A answer\_extension| Nếu answer không có đuôi mặc định là *.ans* thì thêm cái này. Ví dụ '-A out' |
 |-O options | Option cho checker |
 |-p path | Set thư mục làm việc (nhưng chắc không ai xài cái này đâu) |
