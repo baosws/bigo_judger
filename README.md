@@ -4,7 +4,7 @@ Tool này hiện đã được test trên Ubuntu 18.04 và Ubuntu trên Windows 
 
 ![](img/img0.png)
 
-## Cần cài thêm gì để xài:
+## 1. Cần cài thêm gì để xài:
 - make
 - g++
 - java
@@ -15,17 +15,17 @@ sudo apt install make g++ default-jdk
 ```
 Với **Windows** cần cài Ubuntu (app Ubuntu thôi chứ không phải nguyên cái hệ điều hành nha) trước rồi cài thêm mấy cái ở trên.
 
-## Cài judge tool
+## 2. Cài judge tool
 ```
 git clone https://github.com/baosws/bigo_judger
-cd offline_judge
+cd bigo_judger
 make
 make install
 ```
 
-## Sử dụng
+## 3. Sử dụng
 
-### Đầu tiên di chuyển vào thư mục chứa sol các thứ (không cần cũng được, nhưng lát hồi sẽ phải nhập địa chỉ solution với test dài hơn).
+### 1. Đầu tiên di chuyển vào thư mục chứa sol các thứ (không cần cũng được, nhưng lát hồi sẽ phải nhập địa chỉ solution với test dài hơn).
 Ví dụ cần chấm bài Advanced Fruits buổi 11  của Orange ở *Dropbox/TA Big-O Orange/BigO_Orange_Lecture11_DP_LCS (Part II)/4. Advanced Fruits - SPOJ (BTVN Bai 1)*
 - Ubuntu:
 ```
@@ -36,7 +36,7 @@ cd ~/"Dropbox/TA Big-O Orange/BigO_Orange_Lecture11_DP_LCS (Part II)/4. Advanced
 cd "/mnt/c/Users/Bao/Dropbox/TA Big-O Orange/BigO_Orange_Lecture11_DP_LCS (Part II)/4. Advanced Fruits - SPOJ (BTVN Bai 1)"
 ```
 
-### Chấm thôi. Bước này tùy điều kiện mà làm khác nhau.
+### 2. Chấm thôi. Bước này tùy điều kiện mà làm khác nhau.
 Trong folder này có 4 solution là  *Solution_AC.cpp, Solution_AC.java, Solution_AC.py, Solution_RE.cpp*. Thư mục test tên là *data* (mặc định các cặp input, answer có đuôi là *in* và *ans*). Checker tên là *checker.cpp*:
 
 - Chấm *Solution_AC.cpp*:
@@ -86,7 +86,8 @@ judge Solution.* -T data -C checker.cpp
 ![](img/img7.png)
 
 **Note**: checker không nhất thiết phải là C++ nhưng phải theo chuẩn template của anh Phút (coi trong *Cẩm nang trợ giảng*).
-### Các option nhảm nhí khác:
+
+## 4. Các option nhảm nhí khác:
 
 Có thể coi help bằng:
 
