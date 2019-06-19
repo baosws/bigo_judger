@@ -2,6 +2,8 @@
 
 Tool này hiện đã được test trên Ubuntu 18.04 và Ubuntu trên Windows 10.
 
+![](img/img0.png)
+
 ## Cần cài thêm gì để xài:
 - make
 - g++
@@ -13,8 +15,10 @@ sudo apt install make g++ default-jdk
 ```
 Với **Windows** cần cài Ubuntu (app Ubuntu thôi chứ không phải nguyên cái hệ điều hành nha) trước rồi cài thêm mấy cái ở trên.
 
-## Cài tool
+## Cài judge tool
 ```
+git clone https://github.com/baosws/offline_judge
+cd offline_judge
 make
 make install
 ```
