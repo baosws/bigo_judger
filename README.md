@@ -33,30 +33,49 @@ cd "/mnt/c/Users/Bao/Dropbox/TA Big-O Orange/BigO_Orange_Lecture11_DP_LCS (Part 
 ```
 
 ### Chấm thôi. Bước này tùy điều kiện mà làm khác nhau.
-Trong folder này có 3 solution là  *Solution_AC.cpp, Solution_AC.java, Solution_AC.py*. Thư mục test tên là *data* (mặc định các cặp input, answer có đuôi là *in* và *ans*). Checker tên là *checker.cpp*:
+Trong folder này có 4 solution là  *Solution_AC.cpp, Solution_AC.java, Solution_AC.py, Solution_RE.cpp*. Thư mục test tên là *data* (mặc định các cặp input, answer có đuôi là *in* và *ans*). Checker tên là *checker.cpp*:
 
 - Chấm *Solution_AC.cpp*:
 ```
-judge Solution_AC.cpp -T tests
+judge Solution_AC.cpp -T data
 ```
+![](img/img1)
 
-- Chấm cả 3 sol trên:
-
+- Chấm cả 4 sol trên:
 ```
 judge Solution* -T data
 ```
+![](img/img2)
 
-- Chấm thêm time limit 0.5s:
+- Hiện lỗi compilation error:
+```
+judge Solution* -T data -c
+```
+![](img/img3)
 
+- Hiện lỗi runtime error:
 ```
-judge Solution.* -T data -t 0.5
+judge Solution* -T data -r
 ```
+![](img/img4)
+
+- Hiện chỗ sai của output so với answer/checker:
+```
+judge Solution* -T data -d
+```
+![](img/img5)
+
+- Chấm thêm time limit 0.01s:
+```
+judge Solution.* -T data -t 0.01
+```
+![](img/img6)
 
 - Chấm với checker:
-
 ```
 judge Solution.* -T data -C checker.cpp
 ```
+![](img/img7)
 
 ### Các option nhảm nhí khác:
 Có thể coi help bằng:
@@ -67,9 +86,7 @@ judge -h
 
 | Option | Ý nghĩa |
 |--------|---------|
-|-d| Xem output sai gì so với đáp án/checker (mặc định thì không cho xem) |
-|-c| Xem compilation errors |
-|-r| Xem runtime errors |
-|-I arg| Nếu input không có đuôi mặc định là *in* thì thêm cái này. Ví dụ '-I inp' |
-|-A arg| Nếu answer không có đuôi mặc định là *ans* thì thêm cái này. Ví dụ '-A out' |
+|-I input\_extention| Nếu input không có đuôi mặc định là *in* thì thêm cái này. Ví dụ '-I inp' |
+|-A answer\_extension| Nếu answer không có đuôi mặc định là *ans* thì thêm cái này. Ví dụ '-A out' |
 |-O options | Option cho checker |
+|-p path | Set thư mục làm việc (nhưng chắc không ai xài cái này đâu) |
