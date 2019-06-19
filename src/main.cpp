@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 #include <experimental/filesystem>
 #include "cxxopts.hpp"
-#include "logger.hpp"
 #include "bprinter/table_printer.h"
 #include <thread>
 
@@ -62,7 +61,7 @@ void read_configs(const cxxopts::ParseResult& args) {
         bconf.set("checker_options", args["O"].as<std::string>());
 	}
 	catch (const std::exception& ex) {
-		loge(ex.what());
+        std::cerr << ex.what();
 	}
 }
 
@@ -108,7 +107,7 @@ void compile_and_judge(std::map<std::string, SolutionResult>& sol_results, const
 		helper::clean();
 	}
 	catch (const std::exception& ex) {
-		loge(ex.what());
+        std::cerr << ex.what();
 	}
 }
 
@@ -130,7 +129,7 @@ void print_compile_results(const std::map<std::string, SolutionResult>& sol_resu
 		}
 	}
 	catch (const std::exception& ex) {
-		loge(ex.what());
+        std::cerr << ex.what();
 	}
 }
 

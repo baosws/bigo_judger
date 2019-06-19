@@ -1,7 +1,6 @@
 #include "Checker.h"
 #include "helper.h"
 #include "configer.h"
-#include <logger.hpp>
 
 extern configer::configer bconf;
 Checker::Checker() {}

@@ -2,7 +2,6 @@
 #include "helper.h"
 #include "CompileResult.h"
 #include "configer.h"
-#include "logger.hpp"
 
 extern configer::configer bconf;
 

@@ -1,7 +1,6 @@
 #include "TestResult.h"
 #include "presentation.h"
 #include "helper.h"
-#include <logger.hpp>
 std::string TestResult::result_string(bool include_time) const {
     static std::map<Verdict, std::string> color_string_by_code = {
         {Verdict::AC, color_string("AC", presentation::Color::Green)},
