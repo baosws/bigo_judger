@@ -17,7 +17,7 @@ Với **Windows** cần cài Ubuntu (app Ubuntu thôi chứ không phải nguyê
 
 ## Cài judge tool
 ```
-git clone https://github.com/baosws/offline_judge
+git clone https://github.com/baosws/bigo_judger
 cd offline_judge
 make
 make install
