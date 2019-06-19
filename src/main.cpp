@@ -88,11 +88,16 @@ void compile_and_judge(std::map<std::string, SolutionResult>& sol_results, const
         std::mutex sol_lock;
 		for (const std::string& sol_name: sol_names) {
 			threads.emplace_back([&] () {
-                Solution sol(sol_name, bconf.get<double>("time_limit"));
                 SolutionResult sol_result;
-                sol_result.compile_result = sol.compile();
-                if (sol_result.compile_result.compile_succeed()) {
-                    sol_result.judge_result = checker.judge(sol, tests);
+                try {
+                    Solution sol(sol_name, bconf.get<double>("time_limit"));
+                    sol_result.compile_result = sol.compile();
+                    if (sol_result.compile_result.compile_succeed()) {
+                        sol_result.judge_result = checker.judge(sol, tests);
+                    }
+                }
+                catch (const std::exception& ex) {
+                    std::cerr << sol_name << " " << ex.what();
                 }
                 sol_lock.lock();
                 sol_results[sol_name] = sol_result;
