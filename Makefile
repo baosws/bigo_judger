@@ -4,6 +4,7 @@ OBJDIR=obj
 INCDIR=inc
 SRCDIR=src
 
+
 OBJ=$(OBJDIR)/main.o \
 	$(OBJDIR)/helper.o \
 	$(OBJDIR)/presentation.o \
@@ -38,9 +39,11 @@ HEADERS=$(INCDIR)/Checker.h \
 all: judge
 
 judge: $(OBJ)
+	mkdir -p $(OBJDIR)
 	$(CXX) $(OBJ) -o judge $(LINK)
 
 $(OBJDIR)/%.o: $(SRCDIR)/%.cpp $(HEADERS)
+	mkdir -p $(OBJDIR)
 	$(CXX) -c $(CXXFLAGS) $< -o $@
 
 clean:
