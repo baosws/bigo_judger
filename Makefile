@@ -4,7 +4,6 @@ OBJDIR=obj
 INCDIR=inc
 SRCDIR=src
 
-
 OBJ=$(OBJDIR)/main.o \
 	$(OBJDIR)/helper.o \
 	$(OBJDIR)/presentation.o \

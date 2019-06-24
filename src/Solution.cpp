@@ -11,7 +11,7 @@ Solution::Solution(const std::string& filename, double timeout) {
     ext = helper::extension(filename);
     raw = helper::raw_filename(filename);
 
-    if (ext == "cpp") {
+    if (ext == "cpp" || ext == "cc") {
         compile_cmd = helper::format("g++ -std=c++17 -O2 \"%s\" -o " JUDGE_BIN "\"%s\"", filename.data(), raw.data());
         run_command = JUDGE_BIN "/\"" + raw + "\"";
     }
