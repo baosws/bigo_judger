@@ -1,7 +1,5 @@
 # Tool chấm offline cho Big-O Coding.
 
-Tool này hiện đã được test trên Ubuntu 18.04 và Ubuntu trên Windows 10.
-
 ![](img/img0.png)
 
 ## 1. Cần cài thêm gì để xài:

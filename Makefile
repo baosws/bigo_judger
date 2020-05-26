@@ -50,3 +50,6 @@ clean:
 
 install:
 	sudo cp judge /usr/bin/
+
+uninstall:
+	sudo rm /usr/bin/judge

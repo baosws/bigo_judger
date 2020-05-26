@@ -31,7 +31,7 @@ cxxopts::Options get_options(int nargs, char* argv[]) {
 		("c,cerr", "show compilation errors", cxxopts::value<bool>()->default_value("false"))
 		("r,rerr", "show runtime error", cxxopts::value<bool>()->default_value("false"))
 // 		("i,inc", "judge on specified tests only", cxxopts::value<std::vector<std::string>>()->default_value("[\\s\\S]*"))
-		("s,sol", "solutions to be judged", cxxopts::value<std::vector<std::string>>()->default_value("[\\s\\S]*"))
+		("s,sol", "solutions to be judged", cxxopts::value<std::vector<std::string>>())
 		("p,pwd", "working path - the directory contains the solutions", cxxopts::value<std::string>()->default_value(DEFAULT_PWD))
 		("T,test_path", "test path - the directory contains the tests", cxxopts::value<std::string>()->default_value(DEFAULT_TEST_PATH))
 		("I,inp_ext", "input extension", cxxopts::value<std::string>()->default_value(DEFAULT_INPUT_EXTENSION))

@@ -23,6 +23,9 @@ Solution::Solution(const std::string& filename, double timeout) {
         compile_cmd = helper::format("python3 -m py_compile \"%s\"", filename.data());
         run_command = "python3 \"" + filename + "\"";
     }
+    else if (ext == "js") {
+        
+    }
     else {
         throw std::runtime_error("Not supported extension: " + ext + "\n");
     }
